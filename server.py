@@ -4,31 +4,52 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlparse
 
-DATA_FILE = Path(__file__).with_name("products.json")
+PRODUCTS_FILE = Path(__file__).with_name("products.json")
+ORDERS_FILE = Path(__file__).with_name("orders.json")
 
 
-class ProductHandler(BaseHTTPRequestHandler):
+class StoreHandler(BaseHTTPRequestHandler):
+
     def do_GET(self):
-        if urlparse(self.path).path != "/products":
+
+        path = urlparse(self.path).path
+
+        # PRODUCTS endpoint
+        if path == "/products":
+            with PRODUCTS_FILE.open(encoding="utf-8") as file:
+                data = json.load(file)
+
+        # ORDERS endpoint
+        elif path == "/orders":
+            with ORDERS_FILE.open(encoding="utf-8") as file:
+                data = json.load(file)
+
+        # Endpoint does not exist
+        else:
             self.send_error(404, "Endpoint not found")
             return
 
-        with DATA_FILE.open(encoding="utf-8") as file:
-            products = json.load(file)
-
-        body = json.dumps(products).encode("utf-8")
+        body = json.dumps(data).encode("utf-8")
 
         self.send_response(200)
-        self.send_header("Content-Type", "application/json; charset=utf-8")
+        self.send_header(
+            "Content-Type",
+            "application/json; charset=utf-8"
+        )
         self.send_header("Content-Length", str(len(body)))
         self.end_headers()
         self.wfile.write(body)
 
 
 if __name__ == "__main__":
-    print("PRODUCTS VERSION - OCT 5", flush=True)
+
     port = int(os.environ.get("PORT", "8000"))
-    server = ThreadingHTTPServer(("0.0.0.0", port), ProductHandler)
+
+    server = ThreadingHTTPServer(
+        ("0.0.0.0", port),
+        StoreHandler
+    )
 
     print(f"Server listening on port {port}", flush=True)
+
     server.serve_forever()

@@ -1,0 +1,32 @@
+[
+    {
+    "orderId": 5001,
+    "customerId": 6001,
+    "date": "2026-09-12",
+    "products": [101, 105, 108]
+    },
+  {
+    "orderId": 5002,
+    "customerId": 6002,
+    "date": "2026-09-14",
+    "products": [102, 107, 110, 112]
+  },
+  {
+    "orderId": 5003,
+    "customerId": 6003,
+    "date": "2026-09-16",
+    "products": [103, 104, 109]
+  },
+  {
+    "orderId": 5004,
+    "customerId": 6004,
+    "date": "2026-09-18",
+    "products": [106, 111]
+  },
+  {
+    "orderId": 5005,
+    "customerId": 6005,
+    "date": "2026-09-20",
+    "products": [101, 102, 107, 109, 112]
+  }
+]
