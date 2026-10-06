@@ -1,0 +1,95 @@
+[
+    {
+    "productId": 101,
+    "name": "Wireless Headphones",
+    "category": "Electronics",
+    "categoryId":5001,
+    "price": 79.99,
+    "imageURL": "https://github.com/aaldacog/cs3720_resources/blob/main/productId_101.png?raw=true"
+  },
+  {
+    "productId": 102,
+    "name": "Smart Watch",
+    "category": "Electronics",
+    "categoryId":5001,
+    "price": 129.99,
+    "imageURL": "https://github.com/aaldacog/cs3720_resources/blob/main/productId_102.png?raw=true"
+  },
+  {
+    "productId": 103,
+    "name": "Bluetooth Speaker",
+    "category": "Electronics",
+    "categoryId":5001,
+    "price": 59.99,
+    "imageURL": "https://github.com/aaldacog/cs3720_resources/blob/main/productId_103.png?raw=true"
+  },
+  {
+    "productId": 104,
+    "name": "Classic Hoodie",
+    "category": "Clothing",
+    "price": 44.99,
+    "imageURL": "https://github.com/aaldacog/cs3720_resources/blob/main/productId_104.png?raw=true"
+  },
+  {
+    "productId": 105,
+    "name": "Running Shoes",
+    "category": "Clothing",
+    "price": 89.99,
+    "imageURL": "https://github.com/aaldacog/cs3720_resources/blob/main/productId_105.png?raw=true"
+  },
+  {
+    "productId": 106,
+    "name": "Winter Jacket",
+    "category": "Clothing",
+    "price": 119.99,
+    "imageURL": "https://github.com/aaldacog/cs3720_resources/blob/main/productId_106.png?raw=true"
+  },
+  {
+    "productId": 107,
+    "name": "Yoga Mat",
+    "category": "Sports",
+    "categoryId":5003,
+    "price": 29.99,
+    "imageURL": "https://github.com/aaldacog/cs3720_resources/blob/main/productId_107.png?raw=true"
+  },
+  {
+    "productId": 108,
+    "name": "Soccer Ball",
+    "category": "Sports",
+    "categoryId":5003,
+    "price": 34.99,
+    "imageURL": "https://github.com/aaldacog/cs3720_resources/blob/main/productId_108.png?raw=true"
+  },
+  {
+    "productId": 109,
+    "name": "Sports Backpack",
+    "category": "Sports",
+    "categoryId":5003,
+    "price": 49.99,
+    "imageURL": "https://github.com/aaldacog/cs3720_resources/blob/main/productId_109.png?raw=true"
+  },
+  {
+    "productId": 110,
+    "name": "Desk Lamp",
+    "category": "Home",
+    "categoryId":5002,
+    "price": 39.99,
+    "imageURL": "https://github.com/aaldacog/cs3720_resources/blob/main/productId_110.png?raw=true"
+  },
+  {
+    "productId": 111,
+    "name": "Coffee Maker",
+    "category": "Home",
+    "categoryId":5002,
+    "price": 69.99,
+    "imageURL": "https://github.com/aaldacog/cs3720_resources/blob/main/productId_111.png?raw=true"
+  },
+  {
+    "productId": 112,
+    "name": "Throw Pillow",
+    "category": "Home",
+    "categoryId":5002,
+    "price": 24.99,
+    "imageURL": "https://github.com/aaldacog/cs3720_resources/blob/main/productId_112.png?raw=true"
+  }
+]
